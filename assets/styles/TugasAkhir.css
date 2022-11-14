@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap') ;
+body {
+   font-family: 'Quicksand' , sans-serif;
+   margin: 0;
+   padding: 0;
+ }
+header {
+display : inline;
+}
+
+h2 {
+line-height : 0;
+}
+nav {
+   width: 100%;
+   height: 60px;
+   background : #402218; 
+   padding : 1px;
+   position : sticky;
+   top : 0;
+   }
+
+.logo a{
+font-size: 35px;
+font-weight: bold;
+color: white;
+padding:10px;
+line-height: 55px;
+}
+nav a {
+font-size : 18px;
+font-weight : 400;
+text-decoration : none;
+color : white;
+text-transform: uppercase;
+line-height: 0px;
+padding: 10px;
+}
+nav li {
+   display : inline-block;
+   list-style-type : none;
+   line-height: 80px;
+   margin: 0px;
+}
+nav ul{
+   display : inline;
+   list-style-type : none;
+   margin-right : 40px;
+   float: right;
+   }
+nav a:hover {
+font-weight : bold;
+}
+.logo a:hover {
+   font-weight : bold;
+}
+nav #icon{
+   color:white;
+   font-size: 30px;
+   float: right;
+   line-height: 80px;
+   margin-right: 10px;
+   cursor: pointer;
+   padding: 10px; 
+   display: none;
+}
+@media(max-width:1048px){
+label.logo{
+   padding-left :20px; 
+}
+nav ul{
+   margin-right:20px;
+}
+nav a{
+   font-size: 17px;
+}
+}
+@media(max-width:909px){
+   nav #icon{
+      display: block;
+   }
+   nav ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background:#C68B59 ;
+      top :80px;
+      left:-100%;
+      text-align: center ;
+      transition: all .5s;
+   }
+   nav li{
+      display: block;
+      margin:50px 0;
+      line-height: 30px;
+   }
+   nav a{
+      font-size :20px;
+   }
+   a.active,a:hover{
+      border :none;
+      color: #fff;
+   }
+   nav ul.show{
+      left:0;
+   }
+}
+.featured-image {
+width : 100%;
+max-height : 300px;
+object-fit : cover;
+object-position : center;
+}
+.jumbotron {
+font-size : 20px;
+padding-top : 10px;
+background-color : #865439;
+text-align : center;
+color : white;
+}
+* {
+box-sizing : border-box;
+}
+main {
+   padding: 12px;
+overflow: auto;
+}
+
+.flex-column {
+background-color : #C68B59;
+display : flex;
+flex-direction : column;
+width : 100%;
+height : 600px;
+padding : 20px;
+margin :  0 auto;
+}
+.flex-row {
+margin: 5px;
+display : flex;
+flex-direction : row;
+flex-grow : 1;
+margin : 5px;
+}
+.flex-column h2 {
+text-align : center;
+}
+footer {
+   padding: 20px;
+color : white;
+background-color : #402218;
+text-align : center;
+font-weight : bold;
+}
+.box  {
+font-weight : bold;
+flex-basis : 25%;
+font-size : 1em;
+text-align : center;
+padding : 40px;
+border : black solid 1px;
+box-shadow : 3px 3px 3px 4px #3b3b3b;
+flex-grow : 1;
+margin : 5px;
+border : black solid 2px;
+border-radius : 10px;
+background-color : #dbbfaf;
+}
+.image {
+width : 30%;
+max-height : 300px;
+object-fit : cover;
+object-position : center;
+}
+@media screen and (max-width: 1000px) {
+#content, aside {
+width : 100%;
+padding : 0;
+}
+}
+
+.card {
+box-shadow : 3px 3px 3px 4px rgb(0, 0, 0, 0.2);
+border-radius : 5px;
+padding: 10px 15px 10px 15px;
+margin-top : 20px;
+}
+.featured-image {
+width : 100%;
+max-height : 300px;
+object-fit : cover;
+object-position : center;
+}
+
+.card h2 {
+color : #865439;
+}
+
+@media screen and (max-width: 1000px) {
+.box {
+padding : 10px;
+}
+}
+article {
+   display: block;
+}
+
+.box a{
+text-decoration: none;
+list-style-type: none;
+color : #000;
+cursor : pointer;
+}
+div a{
+   font-size: 18px;
+   font-weight: 400;
+   text-decoration: none;
+   color: white;
+}
+div a:hover {
+   font-weight: bold;
+}
+
+.container{
+   font-size: 18;
+   width: 100%;
+   text-align: justify;
+   overflow: auto;
+   padding :10px;
+   font-size: 23px;
+   line-height: 40px;
+}
+.container1{
+   width: 100%;
+   text-align: right;
+   overflow: auto;
+   padding:10px;
+   font-size: 25px;
+}
+.container2{
+   width: 100%;
+   text-align: justify;
+   overflow: auto;
+   padding :10px;
+   font-size: 23px;
+   line-height: 40px;
+}
+
+.container img {
+   width: 30%;
+   float: left;
+   padding :10px;
+}
+.container1 img {
+   width: 40%;
+   float: right;
+   padding :10px;
+}
+.container2 img {
+   width: 30%;
+   float: left;
+   padding: 10px;
+}
+.container h2{
+   font-size: 35px;
+
+}
+.container1 h2{
+padding-left: 80px;
+   font-size: 35px;
+
+}
+.container2 h2{
+font-size: 30px;
+line-height: 40px;
+}
+aside {
+ text-align: center;
+ background-color: wheat;
+ height: 450px;
+ width: 100%;
+ border-radius : 5px;
+}
+aside .biodata{
+   text-align: center;
+}
+.profile h2{
+   padding-top: 25px;
+}
+.profile img{
+   width :20%;
+}
